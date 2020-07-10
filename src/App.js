@@ -1,8 +1,16 @@
 import React from 'react';
+import Navigation from './components/Navigation'
+import AuthContextProvider from './contexts/AuthContext';
 
 function App() {
   return (
-    <h1>Hola cinta negra!</h1>
+    <AuthContextProvider>
+      <Navigation />
+      <div className="container">
+        <h1>hola</h1>
+      </div>
+    </AuthContextProvider>
+    
   );
 }
 
